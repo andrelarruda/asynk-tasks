@@ -1,0 +1,15 @@
+**FUNÇÃO CALLBACK**
+Event handler (javascript) ou listener (java) - padr�o observer
+
+Exemplo com o aniversário surpresa:
+
+Neste cenário temos 2 personagens e um acontecimento (evento - Aniversário surpresa): A namorada (papel de observer - interessada no evento) e o porteiro (subject - detecta o evento e notifica o interessado (observer))
+A namorada deseja fazer um assustado para o namorado. Para isso ela tem que apagar as luzes assim que o namorado chegar.
+
+Ela tem 2 opções:
+1. Ficar esperando o namorado chegar na janela (sem poder fazer outra coisa enquanto isso), à fim de apagar as luzes e preparar o assustado.
+2. Pedir para o porteiro a avisar quando o namorado dela chegar (e poder fazer outras coisas enquanto isso).
+Verificamos que o padrão observer é representado pelo segundo caso.
+
+Trazendo pro contexto tecnológico (mais especificamente o contexto WEB):
+Esta é uma contextualização do que acontece em requisições HTTP síncrona, em que a página fica travada esperando a resposta da requisição; e uma requisição HTTP assíncrona, feita via ajax, na qual a página continua livre pra fazer outras atividades, e quando a resposta chegar, uma notificação será gerada avisando que o evento ocorreu.
